@@ -70,7 +70,7 @@ func main() {
 	if len(*region) > 0 {
 		cfg, conErr = config.LoadDefaultConfig(
 		context.TODO(),
-		config.WithRegion("us-east-1"),)
+		config.WithRegion(*region),)
 	}
 
 	fmt.Println(cfg)
