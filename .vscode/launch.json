@@ -5,11 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "env": {
+                "AWS_REGION": "us-east-1",
+                "AWS_ACCESS_KEY_ID": "AKIAYZUAPDM2KB4DKHXP",
+                "AWS_SECRET_ACCESS_KEY": "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"
+// aws_access_key_id=AKIAYZUAPDM2KB4DKHXP
+// aws_secret_access_key=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
+            },
             "name": "Launch Package",
             "type": "go",
             "request": "launch",
             "mode": "auto",
-            "program": "${workspaceRoot}"
+            "program": "${workspaceRoot}",
+            "args": ["-fshost", "34.239.134.53", "-region", ""]
         }
     ]
 }
